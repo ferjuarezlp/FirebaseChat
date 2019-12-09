@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "275776597218",
+    "firebase_url": "https://friendlychat-ferjuarez.firebaseio.com",
+    "project_id": "friendlychat-ferjuarez",
+    "storage_bucket": "friendlychat-ferjuarez.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:275776597218:android:71408598d1e42e2f2bc2bb",
+        "android_client_info": {
+          "package_name": "com.ferjuarez.udacity.friendlychat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "275776597218-l5cfdpg9eej3pckvu9hjp1tj6u0rt0gh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuMfn8GKuJgeLXedE57jawPVnFaucJBQE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "275776597218-l5cfdpg9eej3pckvu9hjp1tj6u0rt0gh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
