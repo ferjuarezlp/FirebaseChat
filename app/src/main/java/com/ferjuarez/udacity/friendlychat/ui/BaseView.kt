@@ -1,6 +1,7 @@
 package com.ferjuarez.udacity.friendlychat.ui
 
-import androidx.appcompat.app.AppCompatActivity
+import com.ferjuarez.udacity.friendlychat.model.FriendlyMessage
 
-open class BaseView: AppCompatActivity() {
+interface BaseView{
+    fun addNewMessage(message: FriendlyMessage)
 }

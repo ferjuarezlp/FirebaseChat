@@ -1,8 +1,8 @@
 package com.ferjuarez.udacity.friendlychat.presenters
 
-import android.view.View
 import com.ferjuarez.udacity.friendlychat.repository.MessageRepository
 import com.ferjuarez.udacity.friendlychat.ui.BaseView
+import java.util.*
 
 class MessagesPresenter(val repo: MessageRepository) {
     private var mView: BaseView? = null
@@ -12,9 +12,14 @@ class MessagesPresenter(val repo: MessageRepository) {
         this.mView = view
     }
 
-    fun sendMessage(messsage: String, username: String){
-        mRepository.sendMessage(messsage, username)
+    fun subscribeWithReading(view: BaseView){
+        this.mView = view
+        mRepository.subscribeToListener(view)
     }
 
-    fun sayHello() = "${repo.giveHello()} from $this"
+    fun sendMessage(message: String, username: String, date: Date){
+        mRepository.sendMessage(message, username, date)
+    }
+
+
 }

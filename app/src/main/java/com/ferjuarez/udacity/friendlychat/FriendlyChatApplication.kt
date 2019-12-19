@@ -12,13 +12,9 @@ import org.koin.dsl.module
 class FriendlyChatApplication: Application() {
     override fun onCreate() {
         super.onCreate()
-        // Start Koin
+
         val appModule = module {
-
-            // single instance of HelloRepository
             single<MessageRepository> { MessageRepositoryImpl() }
-
-            // Simple Presenter Factory
             factory { MessagesPresenter(get()) }
         }
 
